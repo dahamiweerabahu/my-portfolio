@@ -3,40 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>W.M. Dahami Charukesi Hansana Weerabahu - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Home Section -->
-    <header>
-        <h1>Hello, I'm Dahami Weerabahu</h1>
-        <p>Welcome to my personal portfolio website!</p>
-    </header>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
-        <p>I am an intern learning Web Development and QA. I am very passionate about learning new technologies and building things.</p>
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1>W.M. Dahami Charukesi Hansana Weerabahu</h1>
+            <p class="hero-desc">HNDIT Student | QA Intern passionate about learning new technologies and building things.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="#projects" class="btn secondary-btn">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpeg" alt="Dahami Weerabahu">
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section>
+    <!-- About Section -->
+    <section id="about" class="work-section">
+        <h2>About Me</h2>
+        <p class="section-subtitle">I am an HND in Information Technology (HNDIT) student at ATI Kandy, enthusiastic about learning and developing my technical skills. I am eager to apply my academic knowledge in a professional environment and gain practical hands-on experience.</p>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" class="skills-section">
         <h2>My Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>Basic JavaScript</li>
-            <li>Problem Solving</li>
-            <li>Team Work</li>
-        </ul>
+        <p class="section-subtitle">Core technical proficiencies and professional abilities.</p>
+        
+        <div class="glass-cards-container">
+            <div class="glass-card">
+                <div class="card-icon blue-box"></div>
+                <h3>Programming & Web</h3>
+                <p>JavaScript, HTML, CSS, React.js, Node.js</p>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon pink-box"></div>
+                <h3>QA & Testing</h3>
+                <p>Manual Testing, API Testing, Postman</p>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon yellow-box"></div>
+                <h3>Databases & Tools</h3>
+                <p>MySQL, Git, GitHub, Problem Solving, Teamwork</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Latest Projects Section (Using 1.png to 4.png) -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <p class="section-subtitle">MediConnect - Clinic Management System & Hotel Room Booking System</p>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="1.png" alt="MediConnect Project Screenshot 1">
+                <div class="project-info">
+                    <h3>MediConnect - Clinic Management</h3>
+                    <p>Developed full-stack web application features using JavaScript, React.js, Node.js, and MySQL.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="2.png" alt="MediConnect Project Screenshot 2">
+                <div class="project-info">
+                    <h3>MediConnect Dashboard</h3>
+                    <p>Clinic management system interface and features overview.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="3.png" alt="Hotel Booking Project Screenshot 1">
+                <div class="project-info">
+                    <h3>Hotel Room Booking System</h3>
+                    <p>Group project built using HTML, CSS, and Figma.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="4.png" alt="Hotel Booking Project Screenshot 2">
+                <div class="project-info">
+                    <h3>Hotel Booking Interface</h3>
+                    <p>Room booking management system UI design and layouts.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section>
-        <h2>Contact Me</h2>
-        <p>Email: dahami.weerabahu@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/dahamiweerabahu/my-portfolio" target="_blank">My GitHub Profile</a></p>
+    <section id="contact" class="contact-section">
+        <div class="contact-left">
+            <h2>Let's Talk About Your Project</h2>
+            <p>Get in touch for opportunities, collaborations, or inquiries.</p>
+            <div class="contact-details" style="margin-top: 20px; color: #9ca3af;">
+                <p><strong>Phone:</strong> 076 6336437</p>
+                <p><strong>Email:</strong> dahami.weerabahu@gmail.com</p>
+                <p><strong>Location:</strong> Matale</p>
+            </div>
+        </div>
+        <div class="contact-form-card">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Subject">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2 class="footer-logo">Contact: dahami.weerabahu@gmail.com</h2>
+        <p class="footer-copy">© 2026 W.M. Dahami Charukesi Hansana Weerabahu. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
