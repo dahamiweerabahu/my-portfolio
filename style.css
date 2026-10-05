@@ -228,9 +228,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* ========================================================
-   3D POP-OUT & FAST DYNAMIC FLOATING PROFILE IMAGE FIX
-   ======================================================== */
+/* Smooth Floating Profile Image Animation */
 .hero-image-wrapper {
     position: relative;
     width: 450px;
@@ -241,20 +239,12 @@ body {
     margin: 0 auto;
     flex: 1;
     overflow: visible;
-    /* Faster and more dynamic movement: eheta meheta, uda pahatha fast yna haduwa */
-    animation: imageFloatFast 3.5s ease-in-out infinite alternate;
+    animation: imageFloatSmooth 4s ease-in-out infinite alternate;
 }
 
-@keyframes imageFloatFast {
-    0% {
-        transform: translateY(0px) translateX(0px) scale(1) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-22px) translateX(12px) scale(1.06) rotate(2deg);
-    }
-    100% {
-        transform: translateY(-10px) translateX(-12px) scale(1.03) rotate(-2deg);
-    }
+@keyframes imageFloatSmooth {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-16px); }
 }
 
 .image-glow-bg {
@@ -283,11 +273,9 @@ body {
     padding: 6px;
     background: linear-gradient(135deg, #f43f5e, #3b82f6, #61dafb, #eab308);
     background-size: 300% 300%;
-    /* Strong 3D Pop-out Shadow & Depth */
     box-shadow: 0 45px 90px rgba(0, 0, 0, 0.95), 
                 0 0 50px rgba(244, 63, 94, 0.7), 
                 inset 0 0 30px rgba(255, 255, 255, 0.5);
-    transform: translateZ(50px);
     animation: borderRotate 5s linear infinite;
 }
 
@@ -377,7 +365,6 @@ body {
     white-space: nowrap;
 }
 
-/* Stats Section Alignment Fix */
 .stats-section {
     background: rgba(255, 255, 255, 0.015);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
