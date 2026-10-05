@@ -3,134 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dahami Weerabahu - Portfolio</title>
+    <title>Dahami Weerabahu - QA Intern & Full-Stack Enthusiast</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navbar Section -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
     <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="#home" class="logo">Dahami<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Home / Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-content">
-            <p class="greeting">Hello, I'm</p>
-            <h1> Dahami Weerabahu</h1>
-            <p class="hero-desc">HNDIT Student | QA Intern passionate about learning new technologies and building things.</p>
+        <div class="hero-content fade-in-up">
+            <div class="status-badge">
+                <span class="pulse-dot"></span>
+                Seeking QA & Full-Stack Opportunities
+            </div>
+            <h1>Hi, I'm <span>Dahami Weerabahu</span></h1>
+            <p class="hero-desc">
+                HNDIT Undergraduate at ATI Kandy | QA Intern & Full-Stack Enthusiast focused on building robust web applications and ensuring flawless user experiences.
+            </p>
+            <div class="hero-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Matale, Sri Lanka</span>
+                <a href="mailto:dahami.weerabahu@gmail.com"><i class="fa-solid fa-envelope"></i> dahami.weerabahu@gmail.com</a>
+                <span><i class="fa-solid fa-phone"></i> 076 6336437</span>
+            </div>
             <div class="hero-buttons">
-                <a href="#contact" class="btn primary-btn">Contact Me</a>
-                <a href="#projects" class="btn secondary-btn">View Projects</a>
+                <a href="#contact" class="btn primary-btn"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                <a href="#projects" class="btn secondary-btn"><i class="fa-solid fa-code"></i> View Projects</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="profile.jpeg" alt="Dahami Weerabahu">
+        
+        <!-- 3D Pop-out Dynamic Profile Section -->
+        <div class="hero-image-wrapper">
+            <div class="image-glow-bg"></div>
+            <div class="profile-container">
+                <img src="profile.jpeg" alt="Dahami Weerabahu">
+            </div>
+            
+            <div class="orbit-container">
+                <div class="orbit-badge badge-1">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>QA Testing</span>
+                </div>
+                <div class="orbit-badge badge-2">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React.js</span>
+                </div>
+                <div class="orbit-badge badge-3">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="orbit-badge badge-4">
+                    <i class="fa-solid fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="orbit-badge badge-5">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git / GitHub</span>
+                </div>
+                <div class="orbit-badge badge-6">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Full-Stack</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="work-section">
-        <h2>About Me</h2>
-        <p class="section-subtitle">I am an HND in Information Technology (HNDIT) student at ATI Kandy, enthusiastic about learning and developing my technical skills. I am eager to apply my academic knowledge in a professional environment and gain practical hands-on experience.</p>
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                    <h3>MediConnect</h3>
+                    <p>Full-Stack Clinic System</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <h3>QA & Testing</h3>
+                    <p>Manual & API Testing</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                    <h3>HNDIT Final Year</h3>
+                    <p>ATI Kandy Undergraduate</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                    <h3>Dedication</h3>
+                    <p>Fast Learner & Achiever</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- My Skills Section -->
+    <section id="about" class="work-section">
+        <div class="section-header">
+            <span class="sub-tag"><i class="fa-solid fa-user"></i> Professional Profile</span>
+            <h2>About <span>Me</span></h2>
+            <p class="section-subtitle">A quick glance into my technical journey, academic foundation, and drive for software engineering excellence.</p>
+        </div>
+        <div class="about-card-container">
+            <div class="glass-card about-main-desc">
+                <h3><i class="fa-solid fa-sparkles"></i> Aspiring Software Engineer & QA Specialist</h3>
+                <p>
+                    I am an HND in Information Technology (HNDIT) student at ATI Kandy, specializing in Software Quality Assurance and full-stack development. I am eager to apply my academic knowledge and hands-on testing skills in a professional environment to deliver bug-free, high-performance software systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
-        <p class="section-subtitle">Core technical proficiencies and professional abilities.</p>
+        <div class="section-header">
+            <span class="sub-tag"><i class="fa-solid fa-gears"></i> Technical Proficiencies</span>
+            <h2>Technical <span>Skills</span></h2>
+            <p class="section-subtitle">Core technical proficiencies and QA abilities mastered through coursework and hands-on projects.</p>
+        </div>
         
         <div class="glass-cards-container">
             <div class="glass-card">
-                <div class="card-icon blue-box"></div>
+                <div class="card-icon blue-box"><i class="fa-solid fa-code"></i></div>
                 <h3>Programming & Web</h3>
                 <p>JavaScript, HTML, CSS, React.js, Node.js</p>
+                <div class="badge-container">
+                    <span class="badge">React.js</span>
+                    <span class="badge">Node.js</span>
+                    <span class="badge">JavaScript</span>
+                </div>
             </div>
             <div class="glass-card">
-                <div class="card-icon pink-box"></div>
+                <div class="card-icon pink-box"><i class="fa-solid fa-bug-slash"></i></div>
                 <h3>QA & Testing</h3>
-                <p>Manual Testing, API Testing, Postman</p>
+                <p>Manual Testing, API Testing, Postman, Bug Tracking</p>
+                <div class="badge-container">
+                    <span class="badge">Manual Testing</span>
+                    <span class="badge">Postman</span>
+                    <span class="badge">API Testing</span>
+                </div>
             </div>
             <div class="glass-card">
-                <div class="card-icon yellow-box"></div>
+                <div class="card-icon yellow-box"><i class="fa-solid fa-database"></i></div>
                 <h3>Databases & Tools</h3>
                 <p>MySQL, Git, GitHub, Problem Solving, Teamwork</p>
+                <div class="badge-container">
+                    <span class="badge">MySQL</span>
+                    <span class="badge">Git / GitHub</span>
+                    <span class="badge">Problem Solving</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- My Latest Projects Section (Using 1.png to 4.png) -->
     <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <p class="section-subtitle">MediConnect - Clinic Management System & Hotel Room Booking System</p>
+        <div class="section-header">
+            <span class="sub-tag"><i class="fa-solid fa-laptop-file"></i> Portfolio Projects</span>
+            <h2>Featured Project <span>Case Study</span></h2>
+            <p class="section-subtitle">A deep dive into MediConnect - Comprehensive Clinic Management System (Click screenshots to view full-size)</p>
+        </div>
         
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="1.png" alt="MediConnect Project Screenshot 1">
-                <div class="project-info">
-                    <h3>MediConnect - Clinic Management</h3>
-                    <p>Developed full-stack web application features using JavaScript, React.js, Node.js, and MySQL.</p>
+        <div class="case-study-card">
+            <div class="case-study-header">
+                <div class="case-badge">Featured Case Study</div>
+                <h3>MediConnect Clinic Management System</h3>
+                <p class="case-objective"><strong>Objective:</strong> To build and test a robust digital platform that streamlines clinic appointments, doctor scheduling, and patient record tracking with zero critical defects.</p>
+            </div>
+            
+            <div class="case-role-tech">
+                <div class="role-box">
+                    <h4><i class="fa-solid fa-user-gear"></i> My Role & Contributions</h4>
+                    <ul>
+                        <li>Full-Stack web application development support.</li>
+                        <li>Executed extensive Manual & Functional Testing, verifying constraints.</li>
+                        <li>Created test cases and tracked bugs using systematic test logs.</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-box">
+                    <h4><i class="fa-solid fa-layer-group"></i> Tech Stack & QA Tools</h4>
+                    <div class="badge-container" style="margin-top: 10px;">
+                        <span class="badge">React.js</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">Postman</span>
+                        <span class="badge">Manual Testing</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="2.png" alt="MediConnect Project Screenshot 2">
-                <div class="project-info">
-                    <h3>MediConnect Home Page</h3>
-                    <p>Doctor Booking system interface and features overview.</p>
+
+            <div class="project-grid">
+                <div class="project-card" onclick="openLightbox('1.png', 'System Overview', 'Clinic dashboard architecture and user modules.')">
+                    <div class="img-zoom-wrapper">
+                        <img src="1.png" alt="MediConnect Project Screenshot 1">
+                        <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>System Overview</h3>
+                        <p>Clinic dashboard architecture and user modules.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('2.png', 'Home & Booking UI', 'Validated responsive layouts and appointment flows.')">
+                    <div class="img-zoom-wrapper">
+                        <img src="2.png" alt="MediConnect Project Screenshot 2">
+                        <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Home & Booking UI</h3>
+                        <p>Validated responsive layouts and appointment flows.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('3.png', 'Sign Up Form Validation', 'Tested password policies, email formatting, and errors.')">
+                    <div class="img-zoom-wrapper">
+                        <img src="3.png" alt="MediConnect Project Screenshot 1">
+                        <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sign Up Form Validation</h3>
+                        <p>Tested password policies, email formatting, and errors.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('4.png', 'Admin Dashboard', 'End-to-end admin controls and report verification.')">
+                    <div class="img-zoom-wrapper">
+                        <img src="4.png" alt="MediConnect Screenshot 2">
+                        <div class="zoom-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Admin Dashboard</h3>
+                        <p>End-to-end admin controls and report verification.</p>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="3.png" alt="MediConnect Project Screenshot 1">
-                <div class="project-info">
-                    <h3>MediConnect Sign Up Page</h3>
-                    <p>Project built using JavaScript, React.js, Node.js, MySQL.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="4.png" alt="MediConnect Screenshot 2">
-                <div class="project-info">
-                    <h3>MediConnect Admin Dashboard</h3>
-                    <p>Doctor Channelling and Clinic Management system interface and features overview</p>
-                </div>
+
+            <div class="project-cta-buttons" style="margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://github.com/dahamiweerabahu/Mediconnect" target="_blank" class="btn primary-btn"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <a href="#contact" class="btn secondary-btn"><i class="fa-solid fa-eye"></i> Request Live Walkthrough</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightboxImg" src="" alt="Enlarged Screenshot">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
     <section id="contact" class="contact-section">
         <div class="contact-left">
-            <h2>Let's Talk About Your Project</h2>
+            <span class="sub-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+            <h2>Let's Talk About <span>Your Project</span></h2>
             <p>Get in touch for opportunities, collaborations, or inquiries.</p>
-            <div class="contact-details" style="margin-top: 20px; color: #9ca3af;">
-                <p><strong>Phone:</strong> 076 6336437</p>
-                <p><strong>Email:</strong> dahami.weerabahu@gmail.com</p>
-                <p><strong>Location:</strong> Matale</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dahami-weerabahu-96b456324/" target="_blank" style="color: #60a5fa; text-decoration: underline;">Dahami Weerabahu</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/dahamiweerabahu/Mediconnect" target="_blank" style="color: #60a5fa; text-decoration: underline;">dahamiweerabahu</a></p>
+            <div class="contact-details" style="margin-top: 25px; color: #9ca3af;">
+                <p style="margin-bottom: 12px;"><i class="fa-solid fa-phone" style="color: #f43f5e; margin-right: 10px;"></i> 076 6336437</p>
+                <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope" style="color: #f43f5e; margin-right: 10px;"></i> dahami.weerabahu@gmail.com</p>
+                <p style="margin-bottom: 20px;"><i class="fa-solid fa-location-dot" style="color: #f43f5e; margin-right: 10px;"></i> Matale, Sri Lanka</p>
+                
+                <div class="social-icon-links">
+                    <a href="https://www.linkedin.com/in/dahami-weerabahu-96b456324/" target="_blank" class="social-icon-btn linkedin-btn" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/dahamiweerabahu/Mediconnect" target="_blank" class="social-icon-btn github-btn" title="GitHub Repository">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="contact-form-card">
             <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <input type="text" placeholder="Your Subject">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="btn primary-btn">Send Message</button>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Your Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <h2 class="footer-logo">Contact: dahami.weerabahu@gmail.com</h2>
         <p class="footer-copy">© 2026 W.M. Dahami Charukesi Hansana Weerabahu. All rights reserved.</p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("appear");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll("section, .glass-card, .case-study-card, .stat-box").forEach(el => {
+                el.classList.add("reveal-element");
+                observer.observe(el);
+            });
+        });
+
+        function openLightbox(imgSrc, title, desc) {
+            const lightbox = document.getElementById("imageLightbox");
+            const img = document.getElementById("lightboxImg");
+            const titleEl = document.getElementById("lightboxTitle");
+            const descEl = document.getElementById("lightboxDesc");
+
+            img.src = imgSrc;
+            titleEl.textContent = title;
+            descEl.textContent = desc;
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("imageLightbox");
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+    </script>
 </body>
 </html>
