@@ -76,13 +76,14 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     color: #9ca3af;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     transition: 0.3s ease;
     position: relative;
@@ -228,7 +229,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Smooth Floating Profile Image Animation */
 .hero-image-wrapper {
     position: relative;
     width: 450px;
@@ -631,3 +631,179 @@ body {
 footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255, 255, 255, 0.05); background: #070911; }
 .footer-logo { font-size: 16px; color: #ffffff; margin-bottom: 8px; font-weight: 600; }
 .footer-copy { font-size: 13px; color: #6b7280; }
+
+/* ================================================= */
+/* PERFECT MOBILE RESPONSIVE FIXES                   */
+/* ================================================= */
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column-reverse; /* Ensures text is on top, image with orbiting icons is at the bottom */
+        text-align: center;
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-meta {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        margin: 0 auto 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 2%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .hero-meta {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    /* Adjusted wrapper size so orbiting badges stay safely outside the face area */
+    .hero-image-wrapper {
+        width: 320px;
+        height: 320px;
+        margin: 10px auto;
+    }
+
+    .image-glow-bg {
+        width: 240px;
+        height: 240px;
+    }
+
+    .profile-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .orbit-container {
+        width: 320px;
+        height: 320px;
+    }
+
+    /* Safe positioning for badges around the smaller profile container */
+    .orbit-badge {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+    
+    .badge-1 { top: 15px; left: 25px; }
+    .badge-2 { top: 15px; right: 25px; }
+    .badge-3 { top: 50%; left: -10px; transform: translateY(-50%); }
+    .badge-4 { top: 50%; right: -10px; transform: translateY(-50%); }
+    .badge-5 { bottom: 15px; left: 25px; }
+    .badge-6 { bottom: 15px; right: 25px; }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .glass-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-role-tech {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .section-subtitle {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .contact-form-card form {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 26px;
+    }
+
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .orbit-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .orbit-badge span {
+        font-size: 10px;
+    }
+}
